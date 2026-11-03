@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anole Balako | Student Portfolio</title>
+<meta name="description" content="The student portfolio of Anole Balako, Grade 11 student at Meskaye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" data-e data-store="brand">Anole Balako</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+    <nav id="links" class="links" aria-label="Main">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+      <a href="#goals">Goals</a>
+      <a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="editBtn" title="Edit page content">Edit</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme" title="Switch theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<div class="editbar" id="editbar" hidden>
+  <span>Edit mode: click any text to change it. Changes save automatically in this browser.</span>
+  <button class="btn small ghost" id="resetBtn">Reset all</button>
+</div>
+
+<main id="main">
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-in">
+    <div class="hero-text" data-store="hero">
+      <p class="hello" data-e>Hello, I’m</p>
+      <h1 data-e>Anole Balako</h1>
+      <p class="role">Grade 11 Student · Meskaye</p>
+      <p class="lead" data-e>I am Anole Balako, a Grade 11 student at Meskaye. I enjoy drawing and playing chess, and I value honesty, respect, responsibility, and hard work. I am focused on improving as a student and working toward my future in electrical engineering.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">Explore My Portfolio</a>
+        <a href="#about" class="btn ghost">About Me</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo" id="photo" role="img" aria-label="Profile photo placeholder">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="17"/><path d="M14 92c3-23 18-33 36-33s33 10 36 33z"/></svg>
+      </div>
+      <label class="btn small primary photo-btn">Change photo<input type="file" id="photoInput" accept="image/*" hidden></label>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap reveal">
+    <h2>About me</h2>
+    <p class="sub">A little about who I am and what drives me.</p>
+    <div data-store="about">
+      <div class="own card"><h3>In my own words</h3>
+        <p data-e>I am Anole Balako. I am introverted, quiet and discipline osns. I enjoy drawing and playing chess, and I try to approach my studies with focus and responsibility.</p></div>
+      <div class="grid g4">
+        <article class="card"><h3>Interests</h3><p data-e>Drawing and playing chess.</p></article>
+        <article class="card"><h3>Personality</h3><p data-e>Introverted, quiet and discipline osns.</p></article>
+        <article class="card"><h3>Academic motivation</h3><p data-e>My parents motivate me to become a better student, and my teachers have great educational teaching skills.</p></article>
+        <article class="card"><h3>Personal values</h3><ul><li>Honesty</li><li>Respect</li><li>Responsibility</li><li>Hard work</li></ul></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <div class="wrap reveal">
+    <h2>Education</h2>
+    <p class="sub">My school journey so far.</p>
+    <ol class="timeline" data-store="education">
+      <li><span class="dot now"></span><div class="card"><h3>Meskaye</h3><p class="meta">Grade 11 · Current</p>
+        <dl><dt>Academic year</dt><dd data-e>2016–2019</dd>
+        <dt>Favorite subjects</dt><dd data-e>Web design and math</dd>
+        <dt>Academic interests</dt><dd data-e>Electrical engineering</dd></dl></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="wrap reveal">
+    <h2>Skills</h2>
+    <p class="sub">Skills I use and continue to strengthen.</p>
+    <div class="grid g4" id="skillGrid" data-store="skills">
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Critical thinking</h3><p data-e>Looking at ideas from different angles before deciding.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Problem-solving</h3><p data-e>Breaking hard questions into smaller steps.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Communication</h3><p data-e>Sharing ideas clearly, in speech and writing.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Teamwork</h3><p data-e>Working with classmates toward a shared goal.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Creativity</h3><p data-e>Finding fresh ways to approach a task.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Time management</h3><p data-e>Planning my study time and meeting deadlines.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>Digital literacy</h3><p data-e>Using technology safely and effectively for learning.</p></article>
+    </div>
+    <button class="btn small ghost only-edit" data-add="skill">+ Add skill</button>
+  </div>
+</section>
+
+<!-- GOALS -->
+<section id="goals" class="section alt">
+  <div class="wrap reveal">
+    <h2>Goals and aspirations</h2>
+    <p class="sub">Where I’m heading.</p>
+    <div class="grid g3" data-store="goals">
+      <article class="card"><h3>Short-term goals</h3><ul><li data-e>Get a 90 average.</li><li data-e>Improve every grade I failed last year.</li></ul></article>
+      <article class="card"><h3>Long-term goals</h3><ul><li data-e>Become an electrical engineer.</li><li data-e>Get a degree in web design, if possible.</li></ul></article>
+      <article class="card"><h3>Skills I want to develop</h3><ul><li data-e>Develop my coding skills.</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies" class="section">
+  <div class="wrap reveal">
+    <h2>Hobbies and interests</h2>
+    <p class="sub">What I enjoy outside school.</p>
+    <div class="chips" id="chipList" data-store="hobbies">
+      <span class="chip removable"><span data-e>Hobby one</span><button class="remove" aria-label="Remove">×</button></span>
+      <span class="chip removable"><span data-e>Hobby two</span><button class="remove" aria-label="Remove">×</button></span>
+      
+    </div>
+    <button class="btn small ghost only-edit" data-add="hobby">+ Add hobby</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="wrap reveal">
+    <h2>Contact</h2>
+    <p class="sub">Want to get in touch? Here’s how.</p>
+    <div class="card contact">
+      <div data-store="contact">
+        <p class="meta">Email</p>
+        <p class="mail" id="mailText" data-e>balakogummi@gmail.com</p>
+      </div>
+      <div class="cta">
+        <button class="btn primary" id="mailBtn">Send an email</button>
+        <button class="btn ghost" id="cvBtn">Download student profile (PDF)</button>
+      </div>
+      <div class="socials" id="socials" data-store="socials">
+        <button class="social" data-url="">LinkedIn</button>
+        <button class="social" data-url="">Instagram</button>
+        <button class="social" data-url="">GitHub</button>
+        <button class="social" data-url="">Telegram</button>
+      </div>
+      <p class="hint only-edit">Edit mode: click a social button to paste its link.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <p>© <span id="year"></span> <span data-e data-store="footname">Anole Balako</span> · Grade 11, Meskaye</p>
+    <a href="#home">Back to top</a>
+  </div>
+</footer>
+
+<button class="top" id="top" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<template id="t-skill"><article class="card skill removable"><button class="remove" aria-label="Remove">×</button><h3 data-e>New skill</h3><p data-e>Describe it in one sentence.</p></article></template>
+<template id="t-hobby"><span class="chip removable"><span data-e>New hobby</span><button class="remove" aria-label="Remove">×</button></span></template>
+<script src="script.js"></script>
+</body>
+</html>
